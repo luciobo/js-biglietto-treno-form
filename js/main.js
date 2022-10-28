@@ -7,11 +7,14 @@ bottoneCalcolaPrezzo.addEventListener('click',
     function() {
 
         
-        const userAge = document.getElementById('');
+        const userAge = document.getElementById('age');
+        const age = userAge.value
+        let
         
+
         // let userAgeNumber = parseInt(userAge)
 
-        console.log(userAge)
+        // console.log(userAge)
 
         const userChilometers = document.getElementById('chilometri');
         const chilometri = userChilometers.value;
@@ -27,10 +30,10 @@ bottoneCalcolaPrezzo.addEventListener('click',
         console.log(typeof userAge, typeof userAgeNumber, userAge, userAgeNumber);
 
 
-        if (userAge < 18) {
+        if (age < 18) {
             let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 20 / 100)
             console.log(prezzoBigliettoScontato)
-        } else if (userAge > 65) {
+        } else if (age > 65) {
             let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 60 / 100)
             console.log(prezzoBigliettoScontato)
         } else {
@@ -39,7 +42,7 @@ bottoneCalcolaPrezzo.addEventListener('click',
         }
     }
 
-)
+);
 
 
 
