@@ -9,8 +9,8 @@ bottoneCalcolaPrezzo.addEventListener('click',
         
         const userAge = document.getElementById('age');
         const age = userAge.value
-        let
         
+        console.log(age)
 
         // let userAgeNumber = parseInt(userAge)
 
