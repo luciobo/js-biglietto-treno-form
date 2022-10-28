@@ -10,7 +10,7 @@ bottoneCalcolaPrezzo.addEventListener('click',
         const userAge = document.getElementById('age');
         const age = userAge.value
         
-        console.log(age)
+        
 
         // let userAgeNumber = parseInt(userAge)
 
@@ -30,14 +30,14 @@ bottoneCalcolaPrezzo.addEventListener('click',
         console.log(typeof userAge, typeof userAgeNumber, userAge, userAgeNumber);
 
 
-        if (age < 18) {
+        if (age == 18) {
             let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 20 / 100)
             console.log(prezzoBigliettoScontato)
-        } else if (age > 65) {
+        } else if (age == 65) {
             let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 60 / 100)
             console.log(prezzoBigliettoScontato)
         } else {
-            let prezzoBigliettoIntero = (userChilometers * 0.21)
+            let prezzoBigliettoIntero = (chilometri * 0.21)
             console.log(prezzoBigliettoIntero)
         }
     }
