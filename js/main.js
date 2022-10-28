@@ -1,31 +1,45 @@
-const userAge = document.getElementById('');
-// let userAgeNumber = parseInt(userAge)
-
-console.log(userAge)
-
-const userChilometers = document.getElementById('chilometri');
-
-console.log(userChilometers)
-
-let prezzoBiglietto = (userChilometers * 0.21)
-
-console.log(prezzoBiglietto)
-
-console.log(typeof userAge, typeof userAgeNumber, userAge, userAgeNumber)
 
 
-if (userAge < 18) {
-    let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 20 / 100)
-    console.log(prezzoBigliettoScontato)
-} else if (userAge > 65) {
-    let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 60 / 100)
-    console.log(prezzoBigliettoScontato)
-} else {
-    let prezzoBigliettoIntero = (userChilometers * 0.21)
-    console.log(prezzoBigliettoIntero)
-}
+const bottoneCalcolaPrezzo = document.getElementById('calcola-prezzo');
+
+bottoneCalcolaPrezzo.addEventListener('click',
+
+    function() {
+
+        
+        const userAge = document.getElementById('');
+        
+        // let userAgeNumber = parseInt(userAge)
+
+        console.log(userAge)
+
+        const userChilometers = document.getElementById('chilometri');
+        const chilometri = userChilometers.value;
+        let userAgeNumber = parseInt(chilometri);
 
 
+        console.log(chilometri);
+
+        let prezzoBiglietto = (chilometri * 0.21);
+
+        console.log(prezzoBiglietto);
+
+        console.log(typeof userAge, typeof userAgeNumber, userAge, userAgeNumber);
+
+
+        if (userAge < 18) {
+            let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 20 / 100)
+            console.log(prezzoBigliettoScontato)
+        } else if (userAge > 65) {
+            let prezzoBigliettoScontato = prezzoBiglietto - (prezzoBiglietto * 60 / 100)
+            console.log(prezzoBigliettoScontato)
+        } else {
+            let prezzoBigliettoIntero = (userChilometers * 0.21)
+            console.log(prezzoBigliettoIntero)
+        }
+    }
+
+)
 
 
 
