@@ -4,13 +4,13 @@ const bottoneCalcolaPrezzo = document.getElementById('calcola-prezzo');
 
 bottoneCalcolaPrezzo.addEventListener('click',
 
-    function() {
+    function () {
 
-        
+
         const userAge = document.getElementById('age');
         const age = userAge.value
-        
-        
+
+
 
         // let userAgeNumber = parseInt(userAge)
 
@@ -42,7 +42,14 @@ bottoneCalcolaPrezzo.addEventListener('click',
         }
     }
 
+
+    
 );
+
+const PrezzoBiglietto = document.getElementById("PrezzoBiglietto");
+
+PrezzoBiglietto.innerHTML = ;
+
 
 
 
