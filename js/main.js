@@ -48,7 +48,7 @@ bottoneCalcolaPrezzo.addEventListener('click',
 
 const PrezzoBiglietto = document.getElementById("PrezzoBiglietto");
 
-PrezzoBiglietto.innerHTML = ;
+PrezzoBiglietto.innerHTML = '${prezzoBigliettoScontato} ${prezzoBigliettoIntero}';
 
 
 
